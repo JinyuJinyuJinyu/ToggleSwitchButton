@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+//https://bootcamp.uxdesign.cc/how-to-make-toggle-switch-button-unity-a755b7d6795f
 public class ToggleSwitch : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] Image Frame;
