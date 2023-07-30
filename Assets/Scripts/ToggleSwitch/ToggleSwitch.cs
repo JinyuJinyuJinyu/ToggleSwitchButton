@@ -80,8 +80,11 @@ public class ToggleSwitch : MonoBehaviour, IPointerClickHandler, IPointerDownHan
     // OnPointerDown and OnPointerUp serves as rescaling slide button
     public void OnPointerDown(PointerEventData eventData)
     {
-        touchPos = Input.GetTouch(0).position;
-        pointerDown = true;
+        if (Input.touchCount > 0)
+        {
+            touchPos = Input.GetTouch(0).position;
+            pointerDown = true;
+        }
     }
 
     public void OnPointerUp(PointerEventData eventData)
